@@ -1,6 +1,80 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
+
+const { height } = Dimensions.get('screen');
+const logoHeight = height * 0.25;
 const GlobalStyles = StyleSheet.create({
+    // Splash Screen
+    container: {
+        flex: 1,
+        backgroundColor: '#6b737f'
+    },
+    splashHeader: {
+        flex: 2,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    splashFooter: {
+        flex: 1,
+        backgroundColor: '#fff',
+        borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,
+        paddingVertical: 50,
+        paddingHorizontal: 30
+    },
+    splashTitle: {
+        color: '#05375a',
+        fontSize: 25,
+        fontWeight: 'bold'
+    },
+    text: {
+        color: 'grey',
+        marginTop: 10
+    },
+    logo: {
+        height: logoHeight,
+        width: logoHeight,
+        borderRadius: 50,
+    },
+    linearGradient: {
+        marginTop: 30,
+        alignItems: 'flex-end'
+    },
+    signup: {
+        width: 160,
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 50,
+        flexDirection: 'row'
+    },
+    textSign: {
+        color: 'white',
+        fontWeight: 'bold'
+    },
+
+    //Login  
+    authHeader: {
+        flex:1,
+        justifyContent: 'flex-end',
+        paddingHorizontal: 20,
+        paddingBottom: 50
+    },
+    authTitle: {
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: 'bold'
+    },
+    authFooter: {
+        flex: 3,
+        backgroundColor: '#fff',
+        paddingVertical: 30,
+        paddingHorizontal: 30,
+        borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,
+    },
+
+    //Main
     main: {
         flex: 1,
         justifyContent: 'center',
@@ -21,7 +95,7 @@ const GlobalStyles = StyleSheet.create({
         marginTop: 5,
     },
     userSection: {
-        padding: 15,
+        padding: 14,
     },
     userInfo: {
         flexDirection: 'row',
@@ -43,25 +117,25 @@ const GlobalStyles = StyleSheet.create({
     },
     section: {
         flexDirection: 'row',
-        marginRight: 15,
+        marginRight: 14,
         alignItems: 'center'
     },
     paragraph: {
-        marginRight: 6,
+        marginRight: 4,
         fontWeight: 'bold'
     },
     info: {
-        marginLeft: 15,
+        marginLeft: 12,
         flexDirection: 'column',
     },
     drawerBottom: {
         marginBottom: 10,
         borderTopColor: '#f4f4f4',
-        borderTopWidth:1
+        borderTopWidth: 1
     },
     preferences: {
         flexDirection: 'row',
-        justifyContent:'space-between',
+        justifyContent: 'space-between',
         paddingVertical: 12,
         paddingHorizontal: 16,
     }
