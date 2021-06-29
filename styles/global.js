@@ -55,7 +55,7 @@ const GlobalStyles = StyleSheet.create({
 
     //Login  
     authHeader: {
-        flex:1,
+        flex: 1,
         justifyContent: 'flex-end',
         paddingHorizontal: 20,
         paddingBottom: 50
@@ -72,6 +72,39 @@ const GlobalStyles = StyleSheet.create({
         paddingHorizontal: 30,
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
+    },
+    authInputSection: {
+        flexDirection: 'row',
+        marginTop: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: '#f2f2f2',
+        paddingBottom: 5
+    },
+    authInputTitle: {
+        marginTop: 25,
+        color: '#05375a',
+        fontSize: 14
+    },
+    authTextInput: {
+        flex: 1,
+        color: '#05375a',
+        paddingLeft: 15,
+        marginTop: -10
+    },
+    authButton: {
+        marginTop: 50,
+        alignItems: 'center'
+    },
+    signIn: {
+        width: '100%',
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20        
+    },
+    signInText: {
+        fontSize: 14,
+        fontFamily: 'bold'
     },
 
     //Main

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StatusBar, TouchableOpacity } from 'react-native';
 import GlobalStyles from '../styles/global';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -8,6 +8,7 @@ import * as Animatable from 'react-native-animatable';
 const Splash = ({ navigation }) => {
     return (
         <View style={GlobalStyles.container}>
+            <StatusBar backgroundColor="#6b737f" barStyle="light-content" />
             <View style={GlobalStyles.splashHeader}>
                 <Animatable.Image
                     animation="bounceIn"
