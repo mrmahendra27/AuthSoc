@@ -9,7 +9,7 @@ const ProfileStackScreen = ({ navigation }) => {
     return (
         <Stack.Navigator initialRouteName="Profile" screenOptions={{
             headerStyle: {
-                backgroundColor: '#af7324'
+                backgroundColor: '#694fad'
             },
             headerTintColor: '#fff',
         }}>
